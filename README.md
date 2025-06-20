@@ -311,3 +311,31 @@
                                 <div class="text-amber-800 mb-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width=“2” d=“M13 10V3L4 14h7v7l9-11h-7z” />
+                                        <!-- Sitemap Section -->
+            <section id="sitemap" class="py-16 px-4 bg-white">
+                <div class="container mx-auto">
+                    <h2 class="text-3xl font-bold text-center text-amber-900 mb-8">Sitemap</h2>
+                    <ul class="text-center text-gray-600">
+                        <li><a href="#home" class="text-amber-800 hover:underline">Home</a></li>
+                        <li><a href="#about" class="text-amber-800 hover:underline">About Us</a></li>
+                        <li><a href="#products" class="text-amber-800 hover:underline">What We Offer</a></li>
+                        <li><a href="#products" class="text-amber-800 hover:underline">Products</a></li>
+                        <li><a href="#contact" class="text-amber-800 hover:underline">Contact Us</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Contact Us Section -->
+            <section id="contact" class="py-16 px-4 bg-amber-50">
+                <div class="container mx-auto text-center">
+                    <h2 class="text-3xl font-bold text-amber-900 mb-8">Contact Us</h2>
+                    <p class="text-gray-600 mb-4">Email: <a href="mailto:info.supremewoodworks@gmail.com" class="text-amber-800">info.supremewoodworks@gmail.com</a>, <a href="mailto:swwas.111@gmail.com" class="text-amber-800">swwas.111@gmail.com</a></p>
+                    <p class="text-gray-600 mb-4">Contact No: <span class="text-amber-800">9167905954</span></p>
+                    <p class="text-gray-600 mb-4">Address: Supreme Wood Works, Gaon Devi Road, Govind Nagar, Bhandup West, Mumbai - 400078</p>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="bg-white py-4 text-center">
+                <p class="text-gray-600">&copy; 2023 Supreme Wood Works. All rights reserved.</p>
+            </footer>
