@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supreme Wood Works - Premium Wooden Boxes, Pallets & Crates</title>
+    <meta name="description" content="Manufacturer of high-quality wooden boxes, pallets and crates in rubber wood, pine wood and ply wood since 1980">
+    <meta name="keywords" content="wooden boxes, pallets, crates, rubber wood, pine wood, ply wood, wood manufacturer">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; img-src 'self' data: https:;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <style>
+        /* Wood texture background */
+        body {
+            background-image: url('https://images.unsplash.com/photo-1605106702734-205df224ecce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            min-height: 100vh;
+        }
+        
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.9);
+            min-height: 100vh;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #8B5A2B;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .active::after {
+            width: 100%;
+        }
+        
+        .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-input {
+            transition: border-color 0.3s ease;
+        }
+        
+        .contact-input:focus {
+            border-color: #8B5A2B;
+            outline: none;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background-color: #8B5A2B;
+        }
+        
+        .timeline-dot {
+            position: absolute;
+            left: -26px;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #8B5A2B;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <!-- Header/Navigation -->
+        <header class="bg-white shadow-md">
+            <div class="container mx-auto px-4 py-4">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                        <h1 class="text-2xl font-bold text-amber-900">Supreme Wood Works</h1>
+                        <span class="ml-2 text-xs text-gray-500">Since 1980</span>
+                    </div>
+                    <nav class="hidden md:flex space-x-8">
+                        <a href="#home" class="nav-link active text-amber-900 font-medium">Home</a>
+                        <a href="#products" class="nav-link text-amber-900 font-medium">Products</a>
+                        <a href="#about" class="nav-link text-amber-900 font-medium">About Us</a>
+                        <a href="#contact" class="nav-link text-amber-900 font-medium">Contact</a>
+                    </nav>
+                    <button class="md:hidden text-amber-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Home Section -->
+            <section id="home" class="py-16 px-4">
+                <div class="container mx-auto">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 mb-8 md:mb-0">
+                            <h2 class="text-4xl font-bold text-amber-900 mb-4">Premium Wooden Solutions Since 1980</h2>
+                            <p class="text-gray-700 mb-6">For over four decades, Supreme Wood Works has been crafting high-quality wooden boxes, pallets, and crates from the finest rubber wood, pine wood, and ply wood. Our commitment to quality and durability has made us a trusted name in the industry.</p>
+                            <div class="flex space-x-4">
+                                <a href="#products" class="bg-amber-800 hover:bg-amber-700 text-white px-6 py-3 rounded-md font-medium transition duration-300">Our Products</a>
+                                <a href="#contact" class="border border-amber-800 text-amber-800 hover:bg-amber-50 px-6 py-3 rounded-md font-medium transition duration-300">Contact Us</a>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Wooden products showcase" class="rounded-lg shadow-xl w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Products Section -->
+            <section class="bg-amber-50 py-16 px-4">
+                <div class="container mx-auto">
+                    <h2 class="text-3xl font-bold text-center text-amber-900 mb-12">Our Featured Products</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="product-card bg-white p-6 rounded-lg shadow-md">
+                            <div class="h-48 bg-gray-100 rounded-md mb-4 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1596124579929-05fa5e1f0f0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Wooden Boxes" class="w-full h-full object-cover">
+                            </div>
+                            <h3 class="text-xl font-semibold text-amber-900 mb-2">Wooden Boxes</h3>
+                            <p class="text-gray-600 mb-4">Custom-sized wooden boxes crafted for durability and protection of your valuable items.</p>
+                            <a href="#products" class="text-amber-800 font-medium hover:underline">Learn more →</a>
+                        </div>
+                        <div class="product-card bg-white p-6 rounded-lg shadow-md">
+                            <div class="h-48 bg-gray-100 rounded-md mb-4 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1604754742623-974d34c6ccf4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Wooden Pallets" class="w-full h-full object-cover">
+                            </div>
+                            <h3 class="text-xl font-semibold text-amber-900 mb-2">Wooden Pallets</h3>
+                            <p class="text-gray-600 mb-4">High-quality pallets designed for heavy-duty use in shipping and storage applications.</p>
+                            <a href="#products" class="text-amber-800 font-medium hover:underline">Learn more →</a>
+                        </div>
+                        <div class="product-card bg-white p-6 rounded-lg shadow-md">
+                            <div class="h-48 bg-gray-100 rounded-md mb-4 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1600267165477-6d4cc741b379?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Wooden Crates" class="w-full h-full object-cover">
+                            </div>
+                            <h3 class="text-xl font-semibold text-amber-900 mb-2">Wooden Crates</h3>
+                            <p class="text-gray-600 mb-4">Sturdy crates built to withstand the rigors of transportation while keeping contents secure.</p>
+                            <a href="#products" class="text-amber-800 font-medium hover:underline">Learn more →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Products Section -->
+            <section id="products" class="py-16 px-4">
+                <div class="container mx-auto">
+                    <h2 class="text-3xl font-bold text-center text-amber-900 mb-4">Our Products</h2>
+                    <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">We specialize in manufacturing high-quality wooden products using various wood types to meet your specific needs.</p>
+                    
+                    <div class="mb-16">
+                        <h3 class="text-2xl font-semibold text-amber-800 mb-6">Wood Types We Work With</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="bg-white p-6 rounded-lg shadow-sm border border-amber-100">
+                                <h4 class="text-xl font-medium text-amber-900 mb-3">Rubber Wood</h4>
+                                <p class="text-gray-600">Known for its durability and attractive grain pattern, perfect for high-end packaging solutions.</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-sm border border-amber-100">
+                                <h4 class="text-xl font-medium text-amber-900 mb-3">Pine Wood</h4>
+                                <p class="text-gray-600">Lightweight yet strong, offering excellent value for standard packaging needs.</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-sm border border-amber-100">
+                                <h4 class="text-xl font-medium text-amber-900 mb-3">Ply Wood</h4>
+                                <p class="text-gray-600">Versatile and cost-effective, ideal for a wide range of industrial applications.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-semibold text-amber-800 mb-6">Product Specifications</h3>
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full bg-white rounded-lg overflow-hidden">
+                                <thead class="bg-amber-800 text-white">
+                                    <tr>
+                                        <th class="py-3 px-4 text-left">Product</th>
+                                        <th class="py-3 px-4 text-left">Standard Sizes</th>
+                                        <th class="py-3 px-4 text-left">Weight Capacity</th>
+                                        <th class="py-3 px-4 text-left">Customization</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-amber-100">
+                                    <tr class="hover:bg-amber-50">
+                                        <td class="py-3 px-4">Wooden Boxes</td>
+                                        <td class="py-3 px-4">12"x12"x12" to 48"x48"x48"</td>
+                                        <td class="py-3 px-4">Up to 500 lbs</td>
+                                        <td class="py-3 px-4">Available</td>
+                                    </tr>
+                                    <tr class="hover:bg-amber-50">
+                                        <td class="py-3 px-4">Wooden Pallets</td>
+                                        <td class="py-3 px-4">48"x40" (standard), 42"x42"</td>
+                                        <td class="py-3 px-4">Up to 2,500 lbs</td>
+                                        <td class="py-3 px-4">Available</td>
+                                    </tr>
+                                    <tr class="hover:bg-amber-50">
+                                        <td class="py-3 px-4">Wooden Crates</td>
+                                        <td class="py-3 px-4">Custom sizes available</td>
+                                        <td class="py-3 px-4">Up to 1,000 lbs</td>
+                                        <td class="py-3 px-4">Available</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Us Section -->
+            <section id="about" class="py-16 px-4 bg-amber-50">
+                <div class="container mx-auto">
+                    <h2 class="text-3xl font-bold text-center text-amber-900 mb-12">About Supreme Wood Works</h2>
+                    
+                    <div class="flex flex-col md:flex-row mb-12">
+                        <div class="md:w-1/2 mb-8 md:mb-0">
+                            <h3 class="text-2xl font-semibold text-amber-800 mb-4">Our Story</h3>
+                            <p class="text-gray-700 mb-4">Founded in 1980, Supreme Wood Works began as a small family-owned workshop dedicated to crafting quality wooden containers. Over the years, we've grown into a respected manufacturer while maintaining our commitment to traditional craftsmanship and quality materials.</p>
+                            <p class="text-gray-700">Today, we serve clients across various industries, from agriculture to manufacturing, providing reliable wooden solutions that stand the test of time.</p>
+                        </div>
+                        <div class="md:w-1/2 md:pl-12">
+                            <img src="https://images.unsplash.com/photo-1605106702734-205df224ecce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Our workshop" class="rounded-lg shadow-md w-full h-auto">
+                        </div>
+                    </div>
+                    
+                    <div class="mb-12">
+                        <h3 class="text-2xl font-semibold text-amber-800 mb-6">Our Timeline</h3>
+                        <div class="relative pl-8">
+                            <div class="timeline-item relative pb-8">
+                                <div class="timeline-dot"></div>
+                                <h4 class="text-xl font-medium text-amber-900 mb-2">1980 - Foundation</h4>
+                                <p class="text-gray-600">Established our first workshop with just 3 employees</p>
+                            </div>
+                            <div class="timeline-item relative pb-8">
+                                <div class="timeline-dot"></div>
+                                <h4 class="text-xl font-medium text-amber-900 mb-2">1995 - Expansion</h4>
+                                <p class="text-gray-600">Moved to a larger facility and expanded our product line</p>
+                            </div>
+                            <div class="timeline-item relative pb-8">
+                                <div class="timeline-dot"></div>
+                                <h4 class="text-xl font-medium text-amber-900 mb-2">2010 - Modernization</h4>
+                                <p class="text-gray-600">Invested in state-of-the-art woodworking equipment</p>
+                            </div>
+                            <div class="timeline-item relative">
+                                <div class="timeline-dot"></div>
+                                <h4 class="text-xl font-medium text-amber-900 mb-2">Present Day</h4>
+                                <p class="text-gray-600">Serving clients nationwide with a team of 50+ skilled craftsmen</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-semibold text-amber-800 mb-6">Our Values</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                            <div class="bg-white p-6 rounded-lg shadow-sm">
+                                <div class="text-amber-800 mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <h4 class="text-lg font-medium text-amber-900 mb-2">Quality</h4>
+                                <p class="text-gray-600">We never compromise on the quality of our materials or craftsmanship.</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-sm">
+                                <div class="text-amber-800 mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                                <h4 class="text-lg font-medium text-amber-900 mb-2">Reliability</h4>
+                                <p class="text-gray-600">Consistent products that meet your specifications every time.</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-sm">
+                                <div class="text-amber-800 mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                    </svg>
+                                </div>
+                                <h4 class="text-lg font-medium text-amber-900 mb-2">Integrity</h4>
+                                <p class="text-gray-600">Honest business practices and transparent communication.</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-sm">
+                                <div class="text-amber-800 mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width=“2” d=“M13 10V3L4 14h7v7l9-11h-7z” />
